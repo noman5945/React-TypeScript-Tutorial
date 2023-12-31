@@ -11,6 +11,7 @@ import User from "./components/User";
 import { ThemeContextProvider } from "./components/Context/ThemeContext";
 import Box from "./components/Context/Box";
 import UserContextProvider from "./components/Context/UserContext";
+import List from "./components/Generics/List";
 
 function App() {
   const person = {
@@ -62,6 +63,7 @@ function App() {
       <ThemeContextProvider>
         <Box></Box>
       </ThemeContextProvider>
+      <List items={personlist} onClick={(item) => console.log(item)}></List>
     </div>
   );
 }
